@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .main-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: pink;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: hotpink;
+    color: white;
+  }
+  
+  .image-row {
+  display: flex;
+  justify-content: center; /* centers both images horizontally */
+  align-items: center;     /* aligns them vertically */
+  gap: 10px;               /* space between the images */
+}
+
+#no {
+    position: relative; /* starts in flow like a normal button */
+    transition: top 0.3s ease, left 0.3s ease;
+  }
+  
+  

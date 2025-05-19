@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Date?</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+    <div class="image-row">
+        <img src="assets/with.png" alt="yes" class="image-2 hide" />
+        <img src="assets/date.gif" alt="yes" class="image-2 hide" />
+      </div>
+      <p>
+
+        
+
+        ㅤㅤㅤㅤㅤ
+        ㅤㅤㅤ
+        ㅤㅤ
+      </p>
+      <div class="buttons">
+        <button id="yes" onclick="window.location.href='gform.html'">YES</button>
+        <button id="no">nah sry</button>
+      </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("no");
+
+    noBtn.addEventListener("mouseover", () => {
+      const randX = Math.floor(Math.random() * (window.innerWidth - 100));
+      const randY = Math.floor(Math.random() * (window.innerHeight - 50));
+      noBtn.style.left = randX + "px";
+      noBtn.style.top = randY + "px";
+    });
+  </script>
+</body>
+</html>
